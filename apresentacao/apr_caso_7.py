@@ -1,0 +1,11 @@
+def apresentar_caso_7():
+    print("\n" + "=" * 60)
+    print("CASO 7 — ALOCAÇÃO DE ESTUDANTES EM ESCOLAS")
+    print("=" * 60)
+    print("Contexto:")
+    print("Um distrito escolar precisa fechar uma escola e redistribuir alunos de 6")
+    print("áreas residenciais em 3 escolas remanescentes, minimizando o custo total.")
+    print("\nRegras Críticas:")
+    print("- Cada série (6º, 7º e 8º ano) deve representar entre 30% e 36% da escola.")
+    print("- Respeitar capacidades máximas e rotas inviáveis.")
+    print("- Avaliar alternativas de corte de custos reduzindo linhas de ônibus.")

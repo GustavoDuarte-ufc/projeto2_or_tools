@@ -17,6 +17,17 @@ from apresentacao.apr_caso_5 import apresentar_caso_5
 
 from modelos.caso_6 import caso_6
 
+# Adicione estes imports no topo do main.py
+from apresentacao.apr_caso_7 import apresentar_caso_7
+from montagem.mont_caso_7 import montagem_caso_7
+from modelos.caso_7 import cenario_base_caso_7
+from cenarios.cen_caso_7 import (
+    cenario_inteiro_caso_7,
+    cenario_opcao1_caso_7,
+    cenario_opcao2_caso_7,
+    sintese_decisao_caso_7
+)
+
 from montagem.mont_caso_1 import montagem_caso_1
 from montagem.mont_caso_2 import montagem_caso_2
 from montagem.mont_caso_3 import montagem_caso_3
@@ -340,6 +351,7 @@ while True:
             print("4. Resolver Item 4 (Limites Máximos de Cap de Cobertura)")
             print("5. Resolver Item 5 (Tabela de Custos Fixados por Região)")
             print("6. Resolver Item 6 (Cotas com Percentuais Fixos por População)")
+            print("7. Alocação de estudantes em Escolas")
             print("0. Retornar ao menu principal")
 
             passo = input("\nDigite sua opção: ")
@@ -368,6 +380,43 @@ while True:
             else:
                 print("\nOpção inválida. Tente novamente.")
 
+    # ======================================================
+    # CASO 7 - ALOCAÇÃO DE ESTUDANTES
+    # ======================================================
+    elif escolha == '7':
+        apresentar_caso_7()
+
+        while True:
+            print("\n" + "=" * 60)
+            print("ALOCAÇÃO DE ESTUDANTES — MENU DE CENÁRIOS")
+            print("=" * 60)
+            print("1. Ver Montagem Teórica do Modelo (Item 1)")
+            print("2. Resolver Cenário Base (Itens 2 e 3 - Recomendação de Alocação)")
+            print("3. Resolver Alocação Inteira/Exclusiva por Área (Item 4)")
+            print("4. Resolver Opção 1 — Eliminar transporte 1 a 1.5 milha (Item 5)")
+            print("5. Resolver Opção 2 — Eliminar transporte 1.5 a 2 milhas (Item 6)")
+            print("6. Ver Síntese de Trade-off e Recomendação Final (Itens 7 e 8)")
+            print("0. Retornar ao menu principal")
+
+            passo = input("\nDigite sua opção: ")
+
+            if passo == '1':
+                montagem_caso_7()
+            elif passo == '2':
+                cenario_base_caso_7()
+            elif passo == '3':
+                cenario_inteiro_caso_7()
+            elif passo == '4':
+                cenario_opcao1_caso_7()
+            elif passo == '5':
+                cenario_opcao2_caso_7()
+            elif passo == '6':
+                sintese_decisao_caso_7()
+            elif passo == '0':
+                print("\nRetornando ao menu principal...")
+                break
+            else:
+                print("\nOpção inválida. Tente novamente.")
     # ======================================================
     # SAIR
     # ======================================================

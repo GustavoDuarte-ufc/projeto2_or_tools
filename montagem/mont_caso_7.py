@@ -1,0 +1,13 @@
+def montagem_caso_7():
+    print("\n" + "-" * 50)
+    print("MONTAGEM DO MODELO DE PROGRAMAÇÃO LINEAR (ITEM 1)")
+    print("-" * 50)
+    print("Índices:\n  i: Áreas (1..6), j: Escolas (1..3), k: Séries (6, 7, 8)")
+    print("\nVariáveis de Decisão:\n  x[i, j] = Qtd de alunos da área i enviados à escola j")
+    print("\nFunção Objetivo:\n  Minimizar Z = Soma(Custo[i,j] * x[i,j])")
+    print("\nRestrições:")
+    print("  1. Demanda: Soma_j(x[i,j]) = Total_Estudantes[i]")
+    print("  2. Capacidade: Soma_i(x[i,j]) <= Capacidade[j]")
+    print("  3. Balanço de Séries (Linearizado):")
+    print("     Soma_i( (Proporcao[i,k] - 0.30) * x[i,j] ) >= 0")
+    print("     Soma_i( (Proporcao[i,k] - 0.36) * x[i,j] ) <= 0")
