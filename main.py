@@ -54,6 +54,7 @@ while True:
     print("4. Escala de Operadores")
     print("5. Planejamento de Produção Têxtil")
     print("6. Pesquisa de Mercado para Banco Digital")
+    print("7. Alocação de estudantes em Escolas")
     print("0. Sair")
 
     escolha = input("\nDigite o número do caso desejado: ")
@@ -351,7 +352,6 @@ while True:
             print("4. Resolver Item 4 (Limites Máximos de Cap de Cobertura)")
             print("5. Resolver Item 5 (Tabela de Custos Fixados por Região)")
             print("6. Resolver Item 6 (Cotas com Percentuais Fixos por População)")
-            print("7. Alocação de estudantes em Escolas")
             print("0. Retornar ao menu principal")
 
             passo = input("\nDigite sua opção: ")
