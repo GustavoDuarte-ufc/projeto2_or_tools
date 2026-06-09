@@ -42,13 +42,13 @@ def caso_5(
     # MATÉRIAS-PRIMAS (Com injeção do Item 6)
     # ======================================================
     disp = {
-        'la': 100000.0,
-        'acetato': 50000.0 + acetato_extra,  # Item 6: +10.000 jardas
-        'cashmere': 30000.0,
-        'seda': 40000.0,
-        'rayon': 20000.0,
-        'veludo': 30000.0,
-        'algodao': 50000.0
+        'la': 45000.0,
+        'acetato': 28000.0 + acetato_extra,
+        'cashmere': 9000.0,
+        'seda': 18000.0,
+        'rayon': 30000.0,
+        'veludo': 20000.0,
+        'algodao': 30000.0
     }
 
     # ======================================================
