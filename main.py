@@ -39,6 +39,9 @@ from cenarios.cen_caso_3 import *
 from cenarios.cen_caso_4 import *
 from cenarios.cen_caso_5 import *
 
+from apresentacao.apt_caso_8 import apresentar_caso_8
+from montagem.mont_caso_8 import montagem_caso_8
+from modelos.caso_8 import caso_8
 
 while True:
 
@@ -55,6 +58,7 @@ while True:
     print("5. Planejamento de Produção Têxtil")
     print("6. Pesquisa de Mercado para Banco Digital")
     print("7. Alocação de estudantes em Escolas")
+    print("8. Gestão agrícola sob incerteza")
     print("0. Sair")
 
     escolha = input("\nDigite o número do caso desejado: ")
@@ -417,6 +421,78 @@ while True:
                 break
             else:
                 print("\nOpção inválida. Tente novamente.")
+    
+    # ======================================================
+    # CASO 8 - GESTÃO AGRÍCOLA SOB INCERTEZA (FAMÍLIA PLOUGHMAN)
+    # ======================================================
+    elif escolha == '8':
+        # Certifique-se de que estes imports estão no topo do seu main.py:
+        from apresentacao.apt_caso_8 import apresentar_caso_8
+        from montagem.mont_caso_8 import montagem_caso_8
+        from cenarios.cen_caso_8 import (
+            cenario_solucao_base_e_patrimonio,
+            cenario_faixas_otimalidade,
+            cenario_climatico_item_5,
+            analise_robustez_item_6,
+            calcular_valores_esperados_item_7,
+            resolver_valor_esperado_item_8,
+            avaliar_emprestimo_item_9,
+            avaliar_precisao_estimativas_item_10,
+            mostrar_generalizacao_item_11
+        )
+        
+        apresentar_caso_8()
+
+        while True:
+            print("\n" + "=" * 60)
+            print("MENU DO CASO 8 — GESTÃO AGRÍCOLA SOB INCERTEZA")
+            print("=" * 60)
+            print("1. Identificação Verbal dos Componentes (Item 1)")
+            print("2. Visualizar Formulação Matemática Completa (Item 2)")
+            print("3. Resolver Modelo: Solução Ótima e Patrimônio Final (Item 3)")
+            print("4. Análise Pós-Otimização: Faixas de Otimalidade (Item 4)")
+            print("5. Executar Cenários Climáticos Adversos (Item 5)")
+            print("6. Analisar Robustez e Equilíbrio Ganho-Risco (Item 6)")
+            print("7. Calcular Valores Médios Ponderados Históricos (Item 7)")
+            print("8. Resolver Modelo por Valor Esperado Estocástico (Item 8)")
+            print("9. Avaliar Empréstimo Bancário via Preço-Sombra (Item 9)")
+            print("10. Identificar Estimativas de Maior Precisão (Item 10)")
+            print("11. Ver Generalização do Problema para Outro Contexto (Item 11)")
+            print("0. Retornar ao menu principal")
+
+            passo = input("\nDigite o item desejado: ")
+
+            if passo == '1':
+                print("\n[COMPONENTES DO MODELO]")
+                montagem_caso_8() # Exibe a descrição conceitual
+            elif passo == '2':
+                print("\n[FORMULAÇÃO DO MODELO]")
+                montagem_caso_8() # Exibe as equações matemáticas
+            elif passo == '3':
+                cenario_solucao_base_e_patrimonio()
+            elif passo == '4':
+                cenario_faixas_otimalidade()
+            elif passo == '5':
+                cenario_climatico_item_5()
+            elif passo == '6':
+                analise_robustez_item_6()
+            elif passo == '7':
+                calcular_valores_esperados_item_7()
+            elif passo == '8':
+                resolver_valor_esperado_item_8()
+            elif passo == '9':
+                avaliar_emprestimo_item_9()
+            elif passo == '10':
+                avaliar_precisao_estimativas_item_10()
+            elif passo == '11':
+                mostrar_generalizacao_item_11()
+            elif passo == '0':
+                print("\nRetornando ao menu principal...")
+                break
+            else:
+                print("\nOpção inválida. Tente novamente.")
+
+            
     # ======================================================
     # SAIR
     # ======================================================
